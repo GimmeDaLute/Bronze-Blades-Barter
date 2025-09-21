@@ -1,0 +1,102 @@
+{
+  "version": 1,
+  "setName": "Bronze, Blades, & Barter",
+  "resources": [
+    {
+      "id": "copper",
+      "name": "Copper",
+      "tier": 1,
+      "category": "Commodity",
+      "notes": "Used in early tools and bronze",
+      "image": "/images/copper.png"
+    },
+    {
+      "id": "tin",
+      "name": "Tin",
+      "tier": 1,
+      "category": "Commodity",
+      "notes": "Combines with copper to make bronze",
+      "image": "/images/tin.png"
+    },
+    {
+      "id": "bronze",
+      "name": "Bronze",
+      "tier": 2,
+      "category": "Strategic",
+      "notes": "Stronger alloy, basis of Bronze Age",
+      "image": "/images/bronze.png"
+    },
+    {
+      "id": "horses",
+      "name": "Horses",
+      "tier": 4,
+      "category": "Strategic",
+      "notes": "Essential for cavalry",
+      "image": "/images/horse.png"
+    },
+    {
+      "id": "gold",
+      "name": "Gold",
+      "tier": 5,
+      "category": "Luxury",
+      "notes": "High prestige",
+      "image": "/images/gold.png"
+    },
+    {
+      "id": "clay",
+      "name": "Clay",
+      "tier": 1,
+      "category": "Commodity",
+      "notes": "Used for pottery and bricks",
+      "image": "/images/clay.png"
+    },
+    {
+      "id": "hides",
+      "name": "Hides",
+      "tier": 1,
+      "category": "Commodity",
+      "notes": "Used in clothing and tents",
+      "image": "/images/hides.png"
+    },
+    {
+      "id": "tools",
+      "name": "Simple Tools",
+      "tier": 2,
+      "category": "Commodity",
+      "notes": "Basic productivity tools",
+      "image": "/images/tools.png"
+    },
+    {
+      "id": "tools",
+      "name": "Bronze Tools",
+      "tier": 3,
+      "category": "Commodity",
+      "notes": "Improved productivity tools",
+      "image": "/images/bronze-tools.png"
+    },
+    {
+      "id": "spices",
+      "name": "Spices",
+      "tier": 3,
+      "category": "Luxury",
+      "notes": "Rare, aromatic goods highly prized in trade",
+      "image": "/images/spices.png"
+    },
+    {
+      "id": "bread",
+      "name": "Bread",
+      "tier": 1,
+      "category": "Commodity",
+      "notes": "Staple food made from grains",
+      "image": "/images/bread.png"
+    },
+    {
+      "id": "amber",
+      "name": "Amber",
+      "tier": 3,
+      "category": "Luxury",
+      "notes": "A golden fossil resin used for jewelry and trade",
+      "image": "/images/amber.png"
+    }
+  ]
+}
