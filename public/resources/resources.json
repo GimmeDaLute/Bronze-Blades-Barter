@@ -27,6 +27,14 @@
       "image": "/images/bronze.png"
     },
     {
+      "id": "slaves",
+      "name": "Slaves",
+      "tier": 1,
+      "category": "Strategic",
+      "notes": "Forced labour used for construction, agriculture, and expansion",
+      "image": "/images/slaves.png"
+    },
+    {
       "id": "horses",
       "name": "Horses",
       "tier": 4,
