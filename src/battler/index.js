@@ -1,20 +1,19 @@
 import { defaultRng, makeSeededRng } from "./core/rng.js";
-import { fightOnce } from "./combat/engine.js";
-import { Outcome } from "./combat/constants.js";
+import { fightOnce, fightSeries } from "./combat/engine.js";
+import { Outcome, RollMode, Reason } from "./combat/constants.js";
+import { GeneralLevels, generalBonus } from "./combat/generals.js";
 
-/**
- * Create a Combat API instance with a stable surface for the UI.
- * You can expand this without changing UI imports.
- */
 export function createCombat(options = {}) {
   const rng = options.rng ?? defaultRng;
+  const base = (extra = {}) => ({ rng, ...extra });
 
   return {
-    Outcome,
-    fightOnce: (args = {}) => fightOnce({ rng, ...args }),
-    // room for future: fightSeries, applyModifiers, log, etc.
+    Outcome, RollMode, Reason,
+    GeneralLevels, generalBonus,
+
+    fightOnce: (args = {}) => fightOnce(base(args)),
+    fightSeries: (n, args = {}) => fightSeries(n, base(args)),
   };
 }
 
-// re-export useful pieces for tests or tools
-export { Outcome, makeSeededRng };
+export { Outcome, RollMode, Reason, GeneralLevels, generalBonus, makeSeededRng };
