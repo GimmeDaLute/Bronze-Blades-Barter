@@ -2,6 +2,7 @@ import { defaultRng, makeSeededRng } from "./core/rng.js";
 import { fightOnce, fightSeries } from "./combat/engine.js";
 import { Outcome, RollMode, Reason } from "./combat/constants.js";
 import { GeneralLevels, generalBonus } from "./combat/generals.js";
+import { Conditions, summarizeConditions } from "./combat/conditions.js";
 
 export function createCombat(options = {}) {
   const rng = options.rng ?? defaultRng;
@@ -10,10 +11,16 @@ export function createCombat(options = {}) {
   return {
     Outcome, RollMode, Reason,
     GeneralLevels, generalBonus,
+    Conditions, summarizeConditions,
 
     fightOnce: (args = {}) => fightOnce(base(args)),
     fightSeries: (n, args = {}) => fightSeries(n, base(args)),
   };
 }
 
-export { Outcome, RollMode, Reason, GeneralLevels, generalBonus, makeSeededRng };
+export {
+  Outcome, RollMode, Reason,
+  GeneralLevels, generalBonus,
+  Conditions, summarizeConditions,
+  makeSeededRng
+};
